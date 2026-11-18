@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Relatórios Confidenciais | LPH Tech</title>
+
+    <link rel="stylesheet" href="relatorios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="topbar">
+    <a href="index.html" class="logo">
+        <span>LPH</span> TECH.
+    </a>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="#relatorios" class="ativo">Relatórios</a>
+        <a href="#arquivo">Arquivo interno</a>
+        
+    </nav>
+
+    <div class="status">
+        <span class="status-ponto"></span>
+        SISTEMA MONITORADO
+    </div>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="hero-conteudo">
+            <span class="etiqueta">DIVISÃO DE INTELIGÊNCIA CORPORATIVA // 001</span>
+
+            <h1>RELATÓRIOS<br><span>CONFIDENCIAIS.</span></h1>
+
+            <p>
+                Nem toda informação deve ser compartilhada.
+                Alguns registros existem apenas para garantir que
+                tudo permaneça exatamente como deveria.
+            </p>
+
+            <a href="#relatorios" class="btn-explorar">
+                ACESSAR DOCUMENTOS <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </div>
+
+        <div class="hero-lateral">
+            <div class="selo">
+                <i class="fa-solid fa-lock"></i>
+                <span>ACESSO RESTRITO</span>
+                <strong>LEVEL 04</strong>
+            </div>
+
+            <div class="codigo">
+                <span>DOCUMENTOS LOCALIZADOS</span>
+                <strong>05</strong>
+                <span>CLASSIFICAÇÃO: ULTRASSECRETO</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="aviso">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <p>
+            <strong>AVISO DE SEGURANÇA:</strong>
+            Os documentos abaixo são destinados exclusivamente
+            aos funcionários autorizados da Los Pollos Hermanos Tech.
+            A divulgação não autorizada poderá resultar em desligamento imediato.
+        </p>
+    </section>
+
+    <section class="relatorios" id="relatorios">
+
+        <div class="secao-topo">
+            <div>
+                <span class="etiqueta">BANCO DE DADOS // 2026</span>
+                <h2>ARQUIVO DE OPERAÇÕES</h2>
+                <p>Registros selecionados pela diretoria executiva.</p>
+            </div>
+
+            <div class="contador">
+                <span>ARQUIVOS DISPONÍVEIS</span>
+                <strong id="contador">05</strong>
+            </div>
+        </div>
+
+        <div class="filtros">
+            <button class="filtro ativo" data-filter="todos">TODOS</button>
+            <button class="filtro" data-filter="operacao">OPERAÇÕES</button>
+            <button class="filtro" data-filter="financeiro">FINANCEIRO</button>
+            <button class="filtro" data-filter="pessoal">PESSOAL</button>
+        </div>
+
+        <div class="grade-relatorios">
+
+            <!-- BLUE SKY -->
+            <article class="relatorio" data-category="operacao">
+                <div class="relatorio-topo">
+                    <span class="numero">DOC. 001</span>
+                    <span class="classificacao vermelho">ULTRASSECRETO</span>
+                </div>
+
+                <div class="icone-relatorio azul">
+                    <i class="fa-solid fa-flask"></i>
+                </div>
+
+                <span class="categoria">OPERAÇÃO ESPECIAL</span>
+                <h3>OPERAÇÃO BLUE SKY</h3>
+
+                <p>
+                    Investigação sobre uma cadeia de produção
+                    altamente lucrativa, cuja eficiência chamou
+                    a atenção de setores que prefeririam não saber.
+                </p>
+
+                <div class="referencia">
+                    <i class="fa-solid fa-location-dot"></i>
+                    ALBUQUERQUE // NOVO MÉXICO
+                </div>
+
+                <div class="relatorio-rodape">
+                    <span>STATUS: EM ANÁLISE</span>
+                    <button class="abrir-relatorio" data-report="blue">
+                        ABRIR ARQUIVO <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </article>
+
+            <!-- MADRIGAL -->
+            <article class="relatorio" data-category="financeiro">
+                <div class="relatorio-topo">
+                    <span class="numero">DOC. 002</span>
+                    <span class="classificacao amarelo">CONFIDENCIAL</span>
+                </div>
+
+                <div class="icone-relatorio dourado">
+                    <i class="fa-solid fa-building"></i>
+                </div>
+
+                <span class="categoria">AUDITORIA FINANCEIRA</span>
+                <h3>RELATÓRIO MADRIGAL</h3>
+
+                <p>
+                    Análise de conexões empresariais, subsidiárias
+                    internacionais e movimentações financeiras
+                    relacionadas a contratos de fornecimento.
+                </p>
+
+                <div class="referencia">
+                    <i class="fa-solid fa-globe"></i>
+                    MADRIGAL ELECTROMOTIVE
+                </div>
+
+                <div class="relatorio-rodape">
+                    <span>STATUS: CONCLUÍDO</span>
+                    <button class="abrir-relatorio" data-report="madrigal">
+                        ABRIR ARQUIVO <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </article>
+
+            <!-- HEISENBERG -->
+            <article class="relatorio" data-category="pessoal">
+                <div class="relatorio-topo">
+                    <span class="numero">DOC. 003</span>
+                    <span class="classificacao vermelho">ULTRASSECRETO</span>
+                </div>
+
+                <div class="icone-relatorio verde">
+                    <i class="fa-solid fa-user-secret"></i>
+                </div>
+
+                <span class="categoria">INVESTIGAÇÃO INTERNA</span>
+                <h3>PROJETO HEISENBERG</h3>
+
+                <p>
+                    Perfil de um colaborador externo com habilidades
+                    excepcionais. Sua identidade permanece protegida
+                    por razões administrativas.
+                </p>
+
+                <div class="referencia">
+                    <i class="fa-solid fa-fingerprint"></i>
+                    IDENTIDADE NÃO CONFIRMADA
+                </div>
+
+                <div class="relatorio-rodape">
+                    <span>STATUS: RESTRITO</span>
+                    <button class="abrir-relatorio" data-report="heisenberg">
+                        ABRIR ARQUIVO <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </article>
+
+            <!-- SUPERLAB -->
+            <article class="relatorio" data-category="operacao">
+                <div class="relatorio-topo">
+                    <span class="numero">DOC. 004</span>
+                    <span class="classificacao vermelho">ULTRASSECRETO</span>
+                </div>
+
+                <div class="icone-relatorio azul">
+                    <i class="fa-solid fa-microscope"></i>
+                </div>
+
+                <span class="categoria">INFRAESTRUTURA</span>
+                <h3>INCIDENTE SUPERLAB</h3>
+
+                <p>
+                    Registro de atividades em uma instalação
+                    subterrânea de pesquisa. Equipamentos,
+                    instalações e pessoal sob sigilo absoluto.
+                </p>
+
+                <div class="referencia">
+                    <i class="fa-solid fa-industry"></i>
+                    INSTALAÇÃO SUBTERRÂNEA
+                </div>
+
+                <div class="relatorio-rodape">
+                    <span>STATUS: ARQUIVADO</span>
+                    <button class="abrir-relatorio" data-report="superlab">
+                        ABRIR ARQUIVO <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </article>
+
+            <!-- GUS FRING -->
+            <article class="relatorio" data-category="pessoal">
+                <div class="relatorio-topo">
+                    <span class="numero">DOC. 005</span>
+                    <span class="classificacao amarelo">CONFIDENCIAL</span>
+                </div>
+
+                <div class="icone-relatorio dourado">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+
+                <span class="categoria">DIRETORIA EXECUTIVA</span>
+                <h3>PROTOCOLO POLLOS</h3>
+
+                <p>
+                    Diretrizes administrativas da presidência.
+                    Padrões de excelência, discrição e atendimento.
+                    Especialmente discrição.
+                </p>
+
+                <div class="referencia">
+                    <i class="fa-solid fa-signature"></i>
+                    ASSINATURA: G. FRING
+                </div>
+
+                <div class="relatorio-rodape">
+                    <span>STATUS: ATIVO</span>
+                    <button class="abrir-relatorio" data-report="pollos">
+                        ABRIR ARQUIVO <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="arquivo-final" id="arquivo">
+        <div class="arquivo-icone">
+            <i class="fa-solid fa-vault"></i>
+        </div>
+
+        <div>
+            <span class="etiqueta">SETOR DE ARQUIVAMENTO</span>
+            <h2>O QUE NÃO ESTÁ REGISTRADO<br>NÃO PODE SER QUESTIONADO.</h2>
+            <p>
+                Alguns documentos foram removidos do banco de dados.
+                Outros nunca deveriam ter sido encontrados.
+            </p>
+        </div>
+
+        <span class="arquivo-codigo">LPH-000-X</span>
+    </section>
+
+</main>
+
+<footer>
+    <span>LOS POLLOS HERMANOS TECH © 2026</span>
+    <span>EXCELÊNCIA. DISCRIÇÃO. RESULTADOS.</span>
+    <span>ALBUQUERQUE, NM.</span>
+</footer>
+
+<!-- JANELA DOS DOCUMENTOS -->
+<div class="modal" id="modal">
+    <div class="modal-caixa">
+
+        <div class="modal-topo">
+            <span><i class="fa-solid fa-lock"></i> DOCUMENTO INTERNO</span>
+            <button id="fecharModal"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="modal-conteudo" id="modalConteudo">
+        </div>
+
+        <div class="modal-rodape">
+            <span>LPH TECH // SISTEMA DE SEGURANÇA</span>
+            <button id="entendido">FECHAR DOCUMENTO</button>
+        </div>
+
+    </div>
+</div>
+
+<script src="relatorios.js"></script>
+
+</body>
+</html>
